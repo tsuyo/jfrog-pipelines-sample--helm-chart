@@ -10,7 +10,7 @@ resources:
       # branches:
       #   include: {{ .Values.myRepo.branch }}
 
-  - name: {{ .Values.helm.chart.name }}
+  - name: "{{ .Values.pipelines.name }}_chart"
     type: HelmChart
     configuration:
       sourceArtifactory: {{ .Values.artifactory }}
