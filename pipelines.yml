@@ -23,7 +23,8 @@ pipelines:
     steps:
       - name: helm_publish
         type: HelmPublish
-        configuration:          
+        configuration:
+          helmVersion: 3
           inputResources:
             - name: {{ .Values.gitRepo.name }}
           outputResources:
