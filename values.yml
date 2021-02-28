@@ -1,0 +1,17 @@
+artifactory: artifactory
+pipelines:
+  name: sample_helm_chart
+gitRepo:
+  name: github__tsuyo__jfrog_pipelines_sample__helm_chart
+  provider: tsuyo_github
+  path: tsuyo/jfrog-pipelines-sample--helm-chart
+  # branch: master
+artifactoryRepo:
+  target:
+    name: sample-helm
+  # username: admin
+helm:
+  chart:
+    name: hello-app
+    version: 0.1.0
+    path: ./hello-app-chart
