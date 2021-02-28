@@ -27,7 +27,7 @@ pipelines:
           inputResources:
             - name: {{ .Values.gitRepo.name }}
           outputResources:
-            - name: {{ .Values.helm.chart.name }}
+            - name: "{{ .Values.pipelines.name }}_chart"
           chartPath: {{ .Values.helm.chart.path }}
         # execution:
         #   onStart:
