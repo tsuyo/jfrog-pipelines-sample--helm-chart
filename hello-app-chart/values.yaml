@@ -1,4 +1,4 @@
-replicaCount: 1
+replicaCount: 3
 image:
   repository: ${res_sample_docker__sample_hello_app_imageName}
   tag: ${res_sample_docker__sample_hello_app_imageTag}
