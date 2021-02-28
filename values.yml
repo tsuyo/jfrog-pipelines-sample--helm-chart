@@ -14,4 +14,4 @@ helm:
   chart:
     name: hello-app
     version: 0.1.0
-    path: ./hello-app-chart
+    path: "./hello-app-chart"
