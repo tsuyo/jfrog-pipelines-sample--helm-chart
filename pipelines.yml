@@ -28,8 +28,7 @@ pipelines:
             - name: {{ .Values.gitRepo.name }}
           outputResources:
             - name: {{ .Values.helm.chart.name }}
-          chartPath:
-            - name: {{ .Values.helm.chart.path }}
+          chartPath: {{ .Values.helm.chart.path }}
         # execution:
         #   onStart:
         #     - echo "[TM] manually login to artifactory"
