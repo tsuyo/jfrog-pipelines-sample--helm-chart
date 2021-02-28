@@ -18,6 +18,8 @@ spec:
         name: {{ .Release.Name }}-{{ .Chart.Name }}
         ports:
         - containerPort: {{ .Values.image.port }}
+      imagePullSecrets:
+      - name: {{ .Values.image.pullSecret }}
           
               
 

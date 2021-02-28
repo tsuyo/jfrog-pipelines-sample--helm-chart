@@ -4,6 +4,7 @@ image:
   tag: ${res_sample_docker__sample_hello_app_imageTag}
   pullPolicy: IfNotPresent
   port: 8080
+  pullSecret: regcred
 service:
   type: ClusterIP  
   port: 80
